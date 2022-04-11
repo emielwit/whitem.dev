@@ -1,0 +1,37 @@
+:root {
+  --text-color: #b1b1b1;
+  --text-color-secondary: #b5b5b5;
+  --text-color-highlight: #d4361e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+html {
+  background: #1c1c1c;
+  font-family: "IBM Plex Mono";
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-weight: bold;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
