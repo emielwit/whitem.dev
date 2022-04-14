@@ -12,5 +12,13 @@ module.exports = {
         fonts: ["IBM Plex Mono", "Inconsolata"],
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images\/.*\.svg/,
+        },
+      },
+    },
   ],
 };
