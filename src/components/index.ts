@@ -1,4 +1,4 @@
-import Hero from "./hero";
-import Layout from "./layout";
-
-export { Hero, Layout };
+export * from "./navigation";
+export * from "./hr";
+export * from "./socials";
+export * from "./button";
