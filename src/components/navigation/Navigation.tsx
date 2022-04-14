@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const NavigationBar = styled.div`
+  background: #111;
   display: flex;
   padding: 1rem;
   margin: auto;
