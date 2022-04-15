@@ -3,13 +3,8 @@ import styled from "styled-components";
 import { Button, Hr, Navigation, Socials } from "../components";
 
 const Wrapper = styled.div`
-  width: 100%;
   overflow-x: hidden;
-  margin-top: 24px;
-  margin-right: 24px;
-  margin-left: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 1.5rem 1.5rem 6rem;
 `;
 
 const SocialContainer = styled.div`
@@ -21,6 +16,7 @@ const SocialContainer = styled.div`
 const MainTitle = styled.h1`
   font-size: 2rem;
   background: linear-gradient(to right, #e39600, #ea4c89, #8f48eb, #1da1f2);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
