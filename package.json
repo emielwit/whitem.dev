@@ -9,7 +9,7 @@
     "lint": "lerna run lint",
     "start": "lerna run empty-cache && lerna run start --parallel",
     "type-check": "lerna run type-check",
-    "build-web": "lerna bootstrap && (cd packages/studio && SANITY_AUTH_TOKEN=$SANITY_DEPLOY_STUDIO_TOKEN yarn deploy:graphql) && (cd web && GATSBY_SANITY_PROJECT_ID=$SANITY_PROJECT_ID GATSBY_SANITY_DATASET=$SANITY_DATASET yarn build)"
+    "build-web": "lerna bootstrap && (cd packages/studio && SANITY_AUTH_TOKEN=$SANITY_DEPLOY_STUDIO_TOKEN yarn deploy:graphql) && (cd packages/web && GATSBY_SANITY_PROJECT_ID=$SANITY_PROJECT_ID GATSBY_SANITY_DATASET=$SANITY_DATASET yarn build)"
   },
   "devDependencies": {
     "lerna": "4.0.0"
