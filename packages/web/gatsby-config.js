@@ -15,6 +15,7 @@ module.exports = {
     title: "web",
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
