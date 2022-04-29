@@ -1,3 +1,4 @@
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import { Button, Card, Hr, Navigation, Socials } from "../components";
@@ -36,27 +37,37 @@ const Intro = styled.div`
   }
 `;
 
-const IndexPage = (): JSX.Element => {
+export interface Props extends PageProps {
+  data: {
+    sanityHome: {
+      title: string;
+      sub_title: string;
+      intro: string;
+    };
+  };
+}
+
+export const homePageQuery = graphql`
+  {
+    sanityHome {
+      title
+      sub_title
+      intro
+    }
+  }
+`;
+
+const IndexPage = ({ data }: Props): JSX.Element => {
+  const { title, sub_title, intro } = data.sanityHome;
+
+  console.log({ intro });
   return (
     <>
       <Navigation />
       <Wrapper>
-        <MainTitle>Emiel Wit</MainTitle>
-        <SubTitle>Frontend developer at Betty Blocks</SubTitle>
-        <Intro>
-          <p>
-            I’m Emiel, a NL based frontend developer with over four years of
-            experience. I&#39;m specialised in building apps with React.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
-            ac tortor vitae purus faucibus. Ornare lectus sit amet est placerat
-            in egestas erat. Nunc aliquet bibendum enim facilisis gravida.
-            Egestas pretium aenean pharetra magna ac placerat vestibulum lectus
-            mauris.
-          </p>
-        </Intro>
+        <MainTitle>{title}</MainTitle>
+        <SubTitle>{sub_title}</SubTitle>
+        <Intro>{intro}</Intro>
 
         <Hr />
 
