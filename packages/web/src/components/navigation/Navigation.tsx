@@ -8,6 +8,9 @@ const NavigationBar = styled.div`
   padding: 1rem;
   margin: auto;
   border-top: 1px solid;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right: 0;
   border-image-slice: 1;
   border-image-source: linear-gradient(
     to right,
