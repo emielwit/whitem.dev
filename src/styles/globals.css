@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

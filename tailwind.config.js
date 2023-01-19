@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        blinker: "blinker 1s linear infinite",
+      },
       colors: {
         white: "#ffffff",
         whitem: {
